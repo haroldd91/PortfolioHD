@@ -1,8 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: black;
+}
+
 * {
     box-sizing: border-box;
 }
 
-/*general */
+/* general */
 .container {
     width: 100%;
     max-width: 960px;
@@ -10,6 +17,36 @@
     clear: both;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: saddlebrown;
+}
+
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid mediumorchid;
+}
+
+h2,
+h3 {
+    font-size: 22px;
+}
 
 
 /* header */
@@ -19,10 +56,14 @@
     margin: 0 0 30px;
     overflow: auto;
     color: white;
-    background: rgb(5, 72, 128);
+    background: blue;
     border-bottom: 2px solid #ccc;
 }
 
+.container a {
+    text-decoration: none;
+    color: white;
+}
 
 nav {
     float: right;
@@ -34,9 +75,9 @@ nav a {
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
-    color: rgb(13, 190, 152);
+    color: white;
     text-decoration: none;
-    border-left: 1px solid rgb(10, 115, 163);
+    border-left: 1px solid gray;
 }
 
 nav a: first-child {
@@ -55,9 +96,10 @@ nav a: first-child {
     padding: 30px;
     margin: 0 0 40px;
     background: #fff;
-    border: 1px solid rgb(0, 226, 87);
+    border: 1px solid #ddd;
 }
 
+/* portfolio page */
 .work {
     position: relative;
     float: left;
@@ -90,7 +132,7 @@ nav a: first-child {
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
-    color: teal;
+    color: white;
     text-align: center;
     background: maroon;
     border-bottom: 0;
@@ -108,11 +150,18 @@ nav a: first-child {
 .sidebar {
     float: right;
     width: 100%;
-    max-width: 270px;
-    padding: 30px;
+    max-width:270px;
+    padding:30px;
     margin-bottom: 20px;
     background: yellow;
     border: 1px solid black;
+}
+
+h3, .sidebar h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid  orange;
 }
 
 .social {
@@ -122,18 +171,14 @@ nav a: first-child {
     margin-right: 5px;
 }
 
-h3, .sidebar h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid orange;
-}
+
+/* contact page */
 
 
 /* footer */
 footer {
     padding: 30px 0;
-    clear:both;
+    clear: both;
     font-size: 12px;
     color: orange;
     text-align: center;
