@@ -153,7 +153,7 @@ nav a: first-child {
     max-width:270px;
     padding:30px;
     margin-bottom: 20px;
-    background: yellow;
+    background: white;
     border: 1px solid black;
 }
 
@@ -161,7 +161,7 @@ h3, .sidebar h2 {
     padding-bottom: 20px;
     margin-bottom: 15px;
     line-height: 22px;
-    border-bottom: 2px solid  orange;
+    border-bottom: 2px solid  crimson;
 }
 
 .social {
@@ -173,7 +173,43 @@ h3, .sidebar h2 {
 
 
 /* contact page */
+#contact-form ul {
+    margin-bottom: 20px;
+}
 
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid azure;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: aqua;
+    cursor: pointer;
+    background: darkmagenta;
+    border: 0 none;
+}
 
 /* footer */
 footer {
@@ -183,5 +219,5 @@ footer {
     color: orange;
     text-align: center;
     background: black;
-    border-top: 8px solid red;
+    border-top: 8px solid green;
 }
